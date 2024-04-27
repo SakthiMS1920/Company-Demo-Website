@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="static/home.css">
+    
+    <script src="https://kit.fontawesome.com/4385215774.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    
+    <title>REGISTER</title>
+
+</head> 
+<body>
+        
+<div class="Menu">
+    <div class="Menu1">
+        <div class="pan" id="pan">
+            <span id="text">COMPANY</span>
+            <ion-icon name="caret-forward-outline" class="icon"></ion-icon>
+        </div>
+        <ul class="subs">
+            <li class="cc1"><a href="">Profile</a></li>
+            <li class="cc1"><a href="">Corporate Governance</a></li>
+            <li class="cc1"><a href="">ISO Certification</a></li>
+            <li class="cc1"><a href="">Infrastracture</a></li>
+            <li class="cc1"><a href="">Portfoli</a></li>
+            <li class="cc1"><a href="">News & Events</a></li>
+            <li class="cc1"><a href="">Awards</a></li>
+        </ul>
+        <div class="pan1" id="pan1">
+            <span id="text">SOLUTIONS</span>
+            <ion-icon name="caret-forward-outline" class="icon"></ion-icon>
+        </div>
+        <ul class="subs1">
+            <li class="cc1"><a href="">Remote Infrastracture Management</a></li>
+            <li class="cc1"><a href="">Webhosting & Data Center Support</a></li>
+            <li class="cc1"><a href="">Phone Support Solution</a></li>
+            <li class="cc1"><a href="">Design Solution</a></li>
+            <li class="cc1"><a href="">Development & Opensource Solution</a></li>
+            <li class="cc1"><a href="">Internet Marketing Solution</a></li>
+           
+        </ul>
+        <div class="pan2" id="pan2">
+            <span id="text">OUTSOURCING MODELS</span>
+            <ion-icon name="caret-forward-outline" class="icon"></ion-icon>
+        </div>
+        <ul class="subs2">
+            <li class="cc1"><a href="">Partnership Model</a></li>
+            <li class="cc1"><a href="">Engagement Model</a></li>
+        </ul>
+        
+        
+        <div class="pan3" id="pan3">
+            <span id="text">CAREERS</span>
+            <ion-icon name="caret-forward-outline" class="icon"></ion-icon>
+        </div>
+        <ul class="subs3">
+            <li class="cc1"><a href="">How we Hire</a></li>
+            <li class="cc1"><a href="">Register Your Profile</a></li>
+            <li class="cc1"><a href="">Job Opening</a></li>
+        </ul>
+        
+        
+        <div class="pan4" id="pan4">
+            <span id="text">CONTACT</span>
+            <ion-icon name="caret-forward-outline" class="icon"></ion-icon>
+        </div>
+        <ul class="subs4">
+                <li class="cc1"><a href="">Location</a></li>
+                <li class="cc1"><a href="">Request for Proposal</a></li>
+                <li class="cc1"><a href="">Became a Partner</a></li>
+                <li class="cc1"><a href="">Request for Call Back</a></li>
+                <li class="cc1"><a href="">Feedback</a></li>
+            </ul>
+            
+    
+    </div>
+
+    </div>
+
+
+    <header>
+        <!-- NAv bar full screen 2 -->
+        <nav>
+            <li id="c1"><a href="">COMPANY</a>
+                <ul class="cat">
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Corporate Governance</a></li>
+                    <li><a href="">ISO Certification</a></li>
+                    <li><a href="">Infrastracture</a></li>
+                    <li><a href="">Portfoli</a></li>
+                    <li><a href="">News & Events</a></li>
+                    <li><a href="">Awards</a></li>
+                </ul>
+                
+            </li>
+                  
+            <li id="c1"><a href="">SOLUTION</a>
+                <ul class="cat">
+                    <li><a href="">Remote Infrastracture Management</a></li>
+                    <li><a href="">Webhosting & Data Center Support</a></li>
+                    <li><a href="">Phone Support Solution</a></li>
+                    <li><a href="">Design Solution</a></li>
+                    <li><a href="">Development & Opensource Solution</a></li>
+                    <li><a href="">Internet Marketing Solution</a></li>
+                   
+                </ul>
+            </li>
+            <li id="c1"><a href="">OUTSOURCING MODEL</a>
+                <ul class="cat">
+                <li><a href="">Partnership Model</a></li>
+                <li><a href="">Engagement Model</a></li>
+            </ul>
+            </li>
+            <li id="c1"><a href="">CAREERS</a>
+                <ul class="cat">
+                <li><a href="">How we Hire</a></li>
+                <li><a href="">Register Your Profile</a></li>
+                <li><a href="">Job Opening</a></li>
+            </ul>
+            </li>
+            <li id="c1"><a href="">CONTACT</a>
+                <ul class="cat">
+                    <li><a href="">LOCATION</a></li>
+                    <li><a href="">Request for Proposal</a></li>
+                    <li><a href="">Became a Partner</a></li>
+                    <li><a href="">Request for Call Back</a></li>
+                    <li><a href="">Feedback</a></li>
+                </ul>
+            </li>
+        </nav>
+    </header>
+    <div class="arw">
+        <div class="arrow"> 
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    <div class="bgimg">
+        <br>
+        <p> Request For Proposal</p> 
+    </div>
+    <script src="static/home.js"></script>
+    
+
+
+
+    <div class="frms1">
+
+        <div class="frms">
+            <form class="form2" action="" method="POST">
+                
+                    {% csrf_token %}
+                
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="text" placeholder="First Name" Firstname="fname">
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="text" placeholder="Last Name" lasttname="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="email" placeholder="Email" Email="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="text" placeholder="Company"  Company="copmname">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="Url" placeholder="Company URL" Company Url="copmurl">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="text" placeholder="Company Size" Company Size="compsize">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">
+                        <input class="tt" type="phone" placeholder="Phone" Phone num="pnum">
+                    </td>
+                </tr>
+                <tr>
+                    <h3>Area Of Specialization</h3>
+
+                    <div class="a12">
+                        <div class="a11">
+                           <li> <input class="tt1" type="checkbox" name="Ticket Support" ><span>Ticket Support</span></li>
+                           <li> <input class="tt1" type="checkbox"  name="Contact Center Support"><span>Contact Center Support</span></li>
+                            <li> <input class="tt1" type="checkbox"  name="Chat Support"><span>Chat Support</span></li>
+                            <li> <input class="tt1" type="checkbox"  name="Server Administration"><span>Administration</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="Server Monitoring"><span>Server Monitoring</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="Web Design"><span>Web Design</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="Graphic Design"><span>Graphic Design</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="E-Commerce"><span>E-Commerce</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="PHP Developmen"><span>PHP Developmen</span> </li>
+                            <li> <input class="tt1" type="checkbox" name="SEO"><span>SEO</span> </li>
+                            
+                        </div>
+                    </div>
+
+                    <tr>
+                        <td class="td">
+                            <textarea rows="5" cols="71" placeholder="Describe your organisation" name='describe'></textarea>
+                        </td>
+                    </tr>
+
+                    <div class="labs">
+                        <label>How did you hear about ABS?</label>
+                        <select>
+                            <option class="opst" name="sites" value="Google"><span class="gig">google</span></option>
+                            <option name="sites" value="Google">Yahoo</option>
+                            <option name="sites" value="Google">Other search Engines</option>
+                            <option name="sites" value="Google">Personal Referal</option>
+                        </select>
+            
+                    </div>
+                     
+                    <tr>
+                        <td class="td">
+
+                        <textarea rows="5" cols="71" placeholder="Aditional comments" name='comments'></textarea>
+                        </td>
+                    </tr> 
+                    <div class="g-recaptcha1">
+                        <div class="g-recaptcha" data-sitekey="6LfnHsonAAAAADgOKxz5WRSw2HOjZZWNnPjOuHWe"></div>
+                    </div>
+                    
+                    <div class="subt">
+                        <input type="submit">
+                    </div>                           
+                    
+            </form>
+          
+        </div>
+    </div>
+
+    
+    <div class="compdetl">
+        <div class="compdet2">
+            
+            <div id="loc1"><a href="https://goo.gl/maps/VfdtSt47Cs2Pi2m98" target="_blank"><address> ABS TECHNOLOGIES<br> Coimbatore<br>Tamil Nadu, India<br> CONTACT:9786434749</address></a></div>
+    
+            <div id="kkr">
+                <ol class="olist1">
+                    <h2>COMPANY</h2>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li id="rcb"><a href="">Partnership</a></li>
+                    <li id="rcb1"><a href="">Infrastructure</a></li>
+                    <li id="rcb2"><a href="">Blog</a></li>
+                </ol>    
+            </div>  
+            <div id="kkr">
+                <ol class="olist2">                                                                                       
+                   <h2>SOLUTIONS</h2>
+                   <li id="rcb3"><a href="">RIM</a></li>
+                   <li id="rcb4"><a href="">Hosting Support</a></li>
+                   <li id="rcb5"><a href="">Phone Support</a></li>
+                   <li id="rcb6"><a href="">Design Solutions</a></li>
+                   <li id="rcb7"><a href="">Web Development</a></li>
+                   <li id="rcb8"><a href="">SEO</a></li>
+    
+                </ol>  
+            </div>   
+
+            <div id="kkr">
+                <ol class="olist3">                                                                                       
+                    <h2>CAREERS</h2>
+                    <li id="rcb9"><a href="">How We Hire</a></li>
+                    <li id="rcb10"><a href="">Register Your Profile</a></li>
+                    <li id="rcb11"><a href="">Job Opening</a></li>
+                  
+                 </ol>      
+            </div>      
+
+            <div id="kkr">
+                 <ol class="olist4">                                                                                       
+                    <h2>CONTACT</h2>
+                    <li id="rcb12"><a href="">LOCATION</a></li>
+                    <li id="rcb13"><a href="">Request for Proposal</a></li>
+                    <li id="rcb14"><a href="">Became a Partner</a></li>
+                    <li id="rcb15"><a href="">Request for Call Back</a></li>
+                    <li id="rcb16"><a href="">Feedback</a></li>
+                 </ol>  
+            </div>  
+                        
+        </div>
+        <div class="compdet3">
+            
+            <div id="loc1"><a href="https://goo.gl/maps/VfdtSt47Cs2Pi2m98" target="_blank"><address> ABS TECHNOLOGIES<br>Coimbatore<br>Tamil Nadu<br> CONTACT: 1234567890</address></a></div>
+    
+            <div class="grid">
+                <ol class="olist1">
+                    <h2>COMPANY</h2>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Partnership</a></li>
+                    <li><a href="">Infrastructure</a></li>
+                    <li><a href="">Blog</a></li>
+                </ol>      
+                <ol class="olist2">                                                                                       
+                   <h2>SOLUTIONS</h2>
+                   <li><a href="">RIM</a></li>
+                   <li><a href="">Hosting Support</a></li>
+                   <li><a href="">Phone Support</a></li>
+                   <li><a href="">Design Solutions</a></li>
+                   <li><a href="">Web Development</a></li>
+                   <li><a href="">SEO</a></li>
+    
+                </ol>            
+                <ol class="olist3">                                                                                       
+                    <h2>CAREERS</h2>
+                    <li><a href="">How We Hire</a></li>
+                    <li><a href="">Register Your Profile</a></li>
+                    <li><a href="">Job Opening</a></li>
+                  
+                 </ol>     
+                 <ol class="olist4">                                                                                       
+                    <h2>CONTACT</h2>
+                    <li><a href="">LOCATION</a></li>
+                    <li><a href="">Request for Proposal</a></li>
+                    <li><a href="">Became a Partner</a></li>
+                    <li><a href="">Request for Call Back</a></li>
+                    <li><a href="">Feedback</a></li>
+                 </ol> 
+                 
+            </div>
+          
+                        
+        </div>
+
+        <div class="subm">
+            <button>SUBMIT RFP</button>
+        </div>
+
+        
+
+   
+
+    <footer id="cpyrt"> <a href="">Copyright &#169 2023 ABS Technologies | Privacy Policy | Terms of use | Sitemap . All Rights Reserved.</a> </footer>
+  
+    </div>
+   
+
+
+
+    
+</body>
+</html>
